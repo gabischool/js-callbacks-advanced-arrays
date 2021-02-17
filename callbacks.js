@@ -21,25 +21,51 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 function getLength(arr, cb) {
+  return cb(items)
+}
+console.log(items)
+
   // getLength passes the length of the array into the callback.
+
+function last(arr, cb) {
+const cb = aniga => {
+  console.log(aniga);
 }
 
 function last(arr, cb) {
+  return cb(arr[arr.length - 1])
+}
+last(items, cb);
   // last passes the last item of the array into the callback.
 }
 
 function sumNums(x, y, cb) {
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x + y);
 }
+sumNums(7, 8, (sum) => console.log(`The sum is ${sum}`));
+sumNums(7, 1, (sum) => {
+  for (let x =o; x <sum; x++){
+    console.log(`${sum} - ${x} = ${sum-x}`);
+  }
+});
+  // sumNums adds two numbers (x, y) and passes the result to the callback.
 
 function multiplyNums(x, y, cb) {
+    return cb(x * y);
+  }
+  const ten = 10;
+  multiplyNums(ten, ten, (product) => console.log(`The product of ${ten} and ${ten} is ${product}.`));
+  
   // multiplyNums multiplies two numbers and passes the result to the callback.
-}
 
 function contains(item, list, cb) {
+  return cb(list.find((arrayItem) => arrayItem === Item));
+};
+
+const item1
+
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-}
 
 /* STRETCH PROBLEM */
 
