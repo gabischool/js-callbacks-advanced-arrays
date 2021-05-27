@@ -31,7 +31,7 @@ function last(arr, cb) {
   return cb[arr[3]];
 }
 function()
-last(items,function(last)){
+last(items,function(last){
   console.log(last)
 });
 
@@ -66,7 +66,7 @@ contains(testItem1, items, (boolValue) => {
   } else {
     return console.log(`${testItem1} is NOT in the array!`);
   }
-});
+})
 
 
 /* STRETCH PROBLEM */
